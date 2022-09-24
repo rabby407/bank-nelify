@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <!-- Link Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center font-bold text-violet-600 mt-6">Bangladesh Bank</h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+
+                <div class="bg-sky-700 p-8 rounded-xl">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+
+                <div class="bg-yellow-400 p-8 rounded-xl">
+                    <h3 class="text-2xl">Withdrow</h3>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+
+                <div class="bg-blue-700 p-8 rounded-xl">
+                    <h3 class="text-2xl">Total Blance</h3>
+                    <h2 class="text-5xl">$<span id="balance-total">00</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-500 p-8 rounded-xl">
+                    <h3 class="text-2xl mb-3">PleaseDeposit</h3>
+
+                    <input class="w-1/2" type="text" name="" id="deposit-field" placeholder="$$ Diposit Balance">
+                    <br>
+                    <button id="btn-diposit" class="text-2xl font-bold text-rose-900 px-5 py-1 my-2 bg-yellow-300
+                     hover:bg-sky-900">Deposit</button>
+                </div>
+
+                <div class="bg-orange-400 p-8 rounded-xl">
+                    <h3 class="text-2xl mb-3">Please Withdrow</h3>
+                    <input id="withdraw-field" class="w-1/2" type="text" name="" id="withdrow-field"
+                        placeholder="$$ Withdrow Balance">
+                    <br>
+                    <button id="btn-withdraw" class="text-2xl font-bold text-rose-900 px-5 py-1 my-2 bg-yellow-300
+                    hover:bg-sky-900">Withdrow</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Script -->
+    <script src="deposits.js"></script>
+    <script src="withdrow.js"></script>
+</body>
+
+</html>
